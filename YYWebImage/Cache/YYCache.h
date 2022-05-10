@@ -21,6 +21,10 @@ FOUNDATION_EXPORT const unsigned char YYCacheVersionString[];
 #import <YYWebImage/YYMemoryCache.h>
 #import <YYWebImage/YYDiskCache.h>
 #import <YYWebImage/YYKVStorage.h>
+#elif __has_include(<YYKit/YYCache.h>)
+#import <YYKit/YYMemoryCache.h>
+#import <YYKit/YYDiskCache.h>
+#import <YYKit/YYKVStorage.h>
 #else
 #import "YYMemoryCache.h"
 #import "YYDiskCache.h"
