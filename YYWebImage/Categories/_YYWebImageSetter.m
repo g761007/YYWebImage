@@ -10,7 +10,13 @@
 //
 
 #import "_YYWebImageSetter.h"
+
+#if __has_include(<YYWebImage/YYWebImage.h>)
+#import <YYWebImage/YYWebImageOperation.h>
+#else
 #import "YYWebImageOperation.h"
+#endif
+
 #import <libkern/OSAtomic.h>
 
 NSString *const _YYWebImageFadeAnimationKey = @"YYWebImageFade";
