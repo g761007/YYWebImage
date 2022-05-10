@@ -15,6 +15,8 @@
 #import <YYImage/YYAnimatedImageView.h>
 #elif __has_include(<YYWebImage/YYImage.h>)
 #import <YYWebImage/YYAnimatedImageView.h>
+#elif __has_include(<YYKit/YYImage.h>)
+#import <YYKit/YYAnimatedImageView.h>
 #else
 #import "YYAnimatedImageView.h"
 #endif
