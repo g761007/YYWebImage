@@ -10,8 +10,14 @@
 //
 
 #import "CALayer+YYWebImage.h"
-#import "YYWebImageOperation.h"
 #import "_YYWebImageSetter.h"
+
+#if __has_include(<YYWebImage/YYWebImage.h>)
+#import <YYWebImage/YYWebImageOperation.h>
+#else
+#import "YYWebImageOperation.h"
+#endif
+
 #import <objc/runtime.h>
 
 // Dummy class for category
