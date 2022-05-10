@@ -23,6 +23,11 @@ FOUNDATION_EXPORT const unsigned char YYImageVersionString[];
 #import <YYWebImage/YYSpriteSheetImage.h>
 #import <YYWebImage/YYImageCoder.h>
 #import <YYWebImage/YYAnimatedImageView.h>
+#elif __has_include(<YYKit/YYImage.h>)
+#import <YYKit/YYFrameImage.h>
+#import <YYKit/YYSpriteSheetImage.h>
+#import <YYKit/YYImageCoder.h>
+#import <YYKit/YYAnimatedImageView.h>
 #else
 #import "YYFrameImage.h"
 #import "YYSpriteSheetImage.h"
